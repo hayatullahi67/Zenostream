@@ -1,0 +1,7 @@
+node_modules
+dist
+
+# Environment files - never commit these
+.env
+.env.*
+*.env
