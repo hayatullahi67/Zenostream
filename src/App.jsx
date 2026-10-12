@@ -54,7 +54,7 @@ export default function App() {
   async function verifyPayment(ref) {
     setStatus('verifying');
     try {
-      const res = await fetch(`/api/verify/${encodeURIComponent(ref)}`);
+      const res = await fetch(`/api/verify?reference=${encodeURIComponent(ref)}`);
       const data = await res.json();
 
       if (data.paid) {
